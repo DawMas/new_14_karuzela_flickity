@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoart" content="width=device-width, initial-scale=1.0">
+    <title>Flickity</title>
+    <link rel="stylesheet" type="text/css" href="vendor/Normalize.css">
+    <link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        .cell1{
+            background-image: url('images/troll.jpg');
+        }
+        .cell2{
+            background: url("images/preikenstolen.jpg")
+        }
+        .cell3{
+            background-image: url("images/some.jpg")
+        }
+        .cell4{
+            background-image: url("images/vietnam.jpg")
+        }
+        .cell5{
+            background-image: url("images/arizona.jpg")
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-carousel">
+        <div class="carousel-cell cell1" id="carousel-cell1">
+            <div class='container'></div>
+        </div>
+        <div class="carousel-cell cell2" id="carousel-cell2">
+            <div class='container'></div>
+        </div>
+        <div class="carousel-cell cell3" id="carousel-cell3">
+            <div class='container'></div>
+        </div>
+        <div class="carousel-cell cell4" id="carousel-cell4">
+            <div class='container'></div>
+        </div>
+        <div class="carousel-cell cell5" id="carousel-cell5">
+            <div class='container'></div>
+        </div>
+        
+
+    </div>
+    <button class="restart">restart</button>
+    <div class="progress-bar"></div>
+
+
+    <script src="vendor/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity-hash@1/hash.js"></script>
+    <script src="js/script.js"> </script>
+</body>
+
+</html>
