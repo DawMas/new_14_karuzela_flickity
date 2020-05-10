@@ -9,52 +9,62 @@
     <link rel="stylesheet" type="text/css" href="vendor/Normalize.css">
     <link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <style>
-        .cell1{
-            background-image: url('images/troll.jpg');
-        }
-        .cell2{
-            background: url("images/preikenstolen.jpg")
-        }
-        .cell3{
-            background-image: url("images/some.jpg")
-        }
-        .cell4{
-            background-image: url("images/vietnam.jpg")
-        }
-        .cell5{
-            background-image: url("images/arizona.jpg")
-        }
-    </style>
+
 </head>
 
 <body>
 
     <div class="main-carousel">
-        <div class="carousel-cell cell1" id="carousel-cell1">
-            <div class='container'></div>
-        </div>
-        <div class="carousel-cell cell2" id="carousel-cell2">
-            <div class='container'></div>
-        </div>
-        <div class="carousel-cell cell3" id="carousel-cell3">
-            <div class='container'></div>
-        </div>
-        <div class="carousel-cell cell4" id="carousel-cell4">
-            <div class='container'></div>
-        </div>
-        <div class="carousel-cell cell5" id="carousel-cell5">
-            <div class='container'></div>
-        </div>
-        
 
     </div>
+
     <button class="restart">restart</button>
     <div class="progress-bar"></div>
 
+    <script id="template-product-list" type="x-tmpl-mustache">
+        <div class="carousel-cell" {{{description}}}>
+            <div class="container">
+                <header>{{title}}</header>
+            </div>
+        </div>
 
+    </script>
+
+    <script>
+        var productsData = [
+            {
+                image: 'image 1',
+                title: 'Trolltunga',
+                description: 'id="carousel-cell1" style= "background-image: url(\'images/troll.jpg\')"'
+            },
+            {
+                image: 'image 2',
+                title: 'Preikenstolen',
+                description: 'id="carousel-cell2" style= "background-image: url(\'images/preikenstolen.jpg\')"'
+            },
+            {
+                image: 'image 3',
+                title: 'Some',
+                description: 'id="carousel-cell3" style= "background-image: url(\'images/some.jpg\')"'
+            },
+            {
+                image: 'image 4',
+                title: 'Vietnam',
+                description: 'id="carousel-cell4" style= "background-image: url(\'images/vietnam.jpg\')"'
+            },
+            {
+                image: 'image 5',
+                title: 'Arizona',
+                description: 'id="carousel-cell5" style= "background-image: url(\'images/arizona.jpg\')"'
+            }
+        ]
+
+    </script>
+
+    <script src="vendor/mustache.js"></script>
     <script src="vendor/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/flickity-hash@1/hash.js"></script>
+
     <script src="js/script.js"> </script>
 </body>
 
