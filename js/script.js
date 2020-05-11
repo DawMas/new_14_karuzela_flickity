@@ -39,9 +39,14 @@ flkty.on('scroll', function(progress){
 });
 
 window.initMap= function(){
-    var uluru ={lat: -25.344, lng: 131.036};
+    var troll = productsData[0].cords;
     var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 4, center: uluru}
+        document.getElementById('map'), {zoom: 5, center: troll}
     );
-    var marker = new google.maps.Marker({position: uluru, map: map})
+    var marker = new google.maps.Marker({position: troll, map: map})
+console.log(marker);
+    for ( var i=0; i<productsData.length; i++){
+        marker += new google.maps.Marker({position: productsData[i].cords, map: map})
+    }
+
 };
