@@ -21,6 +21,11 @@
     <button class="restart">restart</button>
     <div class="progress-bar"></div>
 
+    <div class="map" id="map"></div>
+
+
+
+
     <script id="template-product-list" type="x-tmpl-mustache">
         <div class="carousel-cell" {{{description}}}>
             <div class="container">
@@ -64,8 +69,9 @@
     <script src="vendor/mustache.js"></script>
     <script src="vendor/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/flickity-hash@1/hash.js"></script>
-
     <script src="js/script.js"> </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIiibEjAi-2SG1G4G-3qOjZAbYBwUK92Y&callback=initMap"></script>
+
 </body>
 
 </html>
